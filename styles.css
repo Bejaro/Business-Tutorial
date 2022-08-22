@@ -52,6 +52,7 @@ body{
     background-image: url(Images/background.jpg);
     background-size:cover;
     background-attachment: fixed;
+    background-position: center;
     top: 0;
     color: white;
     height: 500px;
@@ -68,7 +69,8 @@ body{
     flex-direction: column;
     align-items:center;
     width: 100vw;
-    background-color: rgba(59, 59, 59, 0.418);
+    background-color: rgba(59, 59, 59, 0.568);
+    padding-bottom: 20px;
 }
 .textandbutton h1{
     text-align: center;
@@ -132,8 +134,9 @@ body{
         transition: transform .2s, filter .2s;
 }
 .infoimage img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     filter: grayscale(0%);
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.199);
 }
 .infotext{
 
@@ -144,11 +147,11 @@ body{
     justify-content: center;
     width: 80%;
     margin: 50px;
-    padding: 50px;
+    padding: 20px;
 }
 .quotebox p{
     text-align: center;
-    font-size: 36px;
+    font-size: 20px;
     font-style: italic;
 }
 
@@ -161,6 +164,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     color: white;
 }
 .calltext{
