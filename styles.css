@@ -1,25 +1,33 @@
-.html{
-    background-color: #1f2937;
-}
 body{
-    margin :0;
     background: #1f2937;
     text-align: center;
     font-family: 'Roboto', arial;
+    width: 100%;
+    margin: 0px;
 }
+
+.body{
+    padding: 0px;
+}
+
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     background-color: #1f2937;
+    padding: 0px;
 }
 .header{
     background-color: #1f2937;
     display: flex;
     justify-content: space-evenly;
     color: #F9FAF8;
-    padding: 10px 0px 10px 50px;
     align-items: center;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    z-index: 2;
 }
 .headerlogo{
     display: block;
@@ -41,18 +49,26 @@ body{
     color: yellow;
 }
 .herotextandlogo{
-    background-color: #1f2937;
-    color: #F9FAF8;
+    background-image: url(Images/background.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    top: 0;
+    color: white;
+    height: 500px;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:center;
     padding: 20px 0px 20px 0px;
 }
+
 .textandbutton{
     display: flex;
     flex-basis: 400px;
     flex-direction: column;
     align-items:center;
+    width: 100vw;
+    background-color: rgba(59, 59, 59, 0.418);
 }
 .textandbutton h1{
     text-align: center;
@@ -71,12 +87,13 @@ body{
 }
 .body{
     background-color: white;
+    width: 90%;
     color: black;
     display:flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .infotext{
@@ -86,7 +103,9 @@ body{
     justify-content: center;
 }
 .infoboxcontainer{
-    display:flex;
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     justify-content: center;
     gap: 50px;
@@ -98,6 +117,10 @@ body{
 }
 .infoimage{
     
+}
+
+.leftalign img{
+    object-position: left;
 }
 .infoimage img{
         border: 4px solid #3882F6;
@@ -119,7 +142,7 @@ body{
     background-color: #E5E7Eb;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     margin: 50px;
     padding: 50px;
 }
@@ -127,11 +150,10 @@ body{
     text-align: center;
     font-size: 36px;
     font-style: italic;
-    width: 1000px;
 }
 
 .calltoaction{
-    width: 700px;
+    width: 60%;
     margin: 20px;
     padding: 20px;
     background-color: #3882F6;
@@ -154,7 +176,7 @@ body{
 
 .copyrightbox{
     background-color: #1f2937;
-    margin:20px;
+    margin:0px;
     width: 100%;
     color: white;
     font-style: italic;
