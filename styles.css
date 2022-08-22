@@ -110,12 +110,20 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    justify-items: center;
 }
 .infobox{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 200px;
+}
+
+.infoboxgriditem{
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
 }
 
 .leftalign img{
