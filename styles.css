@@ -117,9 +117,6 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.infoimage{
-    
-}
 
 .leftalign img{
     object-position: left;
